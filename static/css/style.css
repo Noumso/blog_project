@@ -1,0 +1,87 @@
+/* Style général */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Contenu du blog */
+.blog-content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.blog-content code {
+    background-color: #f1f1f1;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+/* Blocs de code */
+pre code {
+    display: block;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    overflow-x: auto;
+}
+
+/* Images dans le blog */
+.blog-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Card */
+.card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Bouton Scroll to Top */
+#scrollTopBtn {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blog-content {
+        font-size: 1rem;
+    }
+}
+
+/* Animation au survol des blocs de code */
+pre code:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease;
+    background-color: #e9ecef;
+}
+
+/* Beautify code blocks */
+pre code {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    display: block;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #333;
+}

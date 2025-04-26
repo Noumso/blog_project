@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='img/blog_header.jpg') }}" class="card-img-top rounded" alt="Blog Header" data-aos="fade-up">
+        <div class="card-body" data-aos="fade-up" data-aos-delay="200">
+            <h1 class="card-title text-center mb-4">Mutable, Immutable... Everything is Object!</h1>
+            <div class="blog-content">
+                {{ content | safe }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
