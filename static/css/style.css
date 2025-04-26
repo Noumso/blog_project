@@ -1,8 +1,20 @@
-/* Style général */
+/* Arrière-plan animé */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
+    background: url("../img/arriere_plan.jpg") repeat-y center top;
+    background-size: cover;
     color: #212529;
+    animation: scrollBackground 30s linear infinite;
+}
+
+/* Animation de défilement */
+@keyframes scrollBackground {
+    from {
+        background-position: center top;
+    }
+    to {
+        background-position: center bottom;
+    }
 }
 
 /* Titres */
